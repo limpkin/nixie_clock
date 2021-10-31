@@ -1,0 +1,4 @@
+vhdl work "C:\Users\limpkin\Dropbox\Projets\nixie\fpga\nixie_clock\spi_slave.vhd"
+vhdl work "C:\Users\limpkin\Dropbox\Projets\nixie\fpga\nixie_clock\pwm.vhd"
+vhdl work "C:\Users\limpkin\Dropbox\Projets\nixie\fpga\nixie_clock\dcm_multiplier.vhd"
+vhdl work "C:\Users\limpkin\Dropbox\Projets\nixie\fpga\nixie_clock\TOP.vhd"

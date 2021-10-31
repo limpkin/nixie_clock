@@ -1,0 +1,16 @@
+001388029592 C:\Users\limpkin\Dropbox\Projets\nixie\esp8266\all_full.lua
+001388028393 C:\Users\limpkin\Dropbox\Projets\nixie\esp8266\all_test.lua
+001398648669 C:\Users\limpkin\Dropbox\Projets\nixie\esp8266\all_test_select.lua
+001398578188 C:\Users\limpkin\Dropbox\Projets\nixie\esp8266\all_test_small.lua
+001387903462 C:\Users\limpkin\Dropbox\Projets\nixie\esp8266\indiv_test.lua
+001251651602 C:\Users\limpkin\Dropbox\Projets\nixie\esp8266\init.lua
+001223337291 C:\Users\limpkin\Dropbox\Projets\nixie\esp8266\LLbin.lua
+001250000184 C:\Users\limpkin\Dropbox\Projets\nixie\esp8266\nixie_clock.lua
+001388031004 C:\Users\limpkin\Dropbox\Projets\nixie\esp8266\rot_test.lua
+001398712920 C:\Users\limpkin\Dropbox\Projets\nixie\esp8266\scripts\all_test_select.lua
+001398701392 C:\Users\limpkin\Dropbox\Projets\nixie\esp8266\scripts\all_test_small.lua
+001398701261 C:\Users\limpkin\Dropbox\Projets\nixie\esp8266\scripts\fast_blinking_all.lua
+001398701002 C:\Users\limpkin\Dropbox\Projets\nixie\esp8266\scripts\fast_blinking_sel.lua
+001398687372 C:\Users\limpkin\Dropbox\Projets\nixie\esp8266\scripts\fast_indiv_blinking.lua
+001398692555 C:\Users\limpkin\Dropbox\Projets\nixie\esp8266\scripts\fast_indiv_blinking_select.lua
+001395569435 C:\Users\limpkin\Dropbox\Projets\nixie\esp8266\sweep_test.lua

@@ -1,0 +1,113 @@
+iMPACT Version: 14.7
+
+iMPACT log file Started on Sat Aug 20 19:44:31 2016
+
+Welcome to iMPACT
+iMPACT Version: 14.7
+Project: 'C:\Xilinx\14.7\\auto_project.ipf' already exists.
+Original project has been renamed to 'C:\Xilinx\14.7\\auto_project_1.ipf'.
+Project: C:\Xilinx\14.7\\auto_project.ipf created.
+// *** BATCH CMD : setMode -bs
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+INFO:iMPACT - Digilent Plugin: Plugin Version: 2.4.4
+INFO:iMPACT - Digilent Plugin: no JTAG device was found.
+AutoDetecting cable. Please wait.
+*** WARNING ***: When port is set to auto detect mode, cable speed is set todefault 6 MHz regardless of explicit arguments supplied for setting the baudrates
+PROGRESS_START - Starting Operation.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+ Source driver files not found.
+The Platform Cable USB is not detected. Please connect a cable.If a cable isconnected, please disconnect
+and reconnect to the usb port, follow the instructions in the 'Found NewHardware Wizard', then retry
+the Cable Setup operation.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT1).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT2).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT3).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT4).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+Cable autodetection failed.
+WARNING:iMPACT:923 - Can not find cable, check cable setup !Enumerating cables. Please wait.
+PROGRESS_START - Starting Operation.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+ Source driver files not found.
+The Platform Cable USB is not detected. Please connect a cable.If a cable isconnected, please disconnect
+and reconnect to the usb port, follow the instructions in the 'Found NewHardware Wizard', then retry
+the Cable Setup operation.
+PROGRESS_END - End Operation.
+Elapsed time =      0 sec.
+INFO:iMPACT - Digilent Plugin: Plugin Version: 2.4.4
+INFO:iMPACT - Digilent Plugin: no JTAG device was found.
+ERROR:iMPACT - This function requires that a target is opened first.
+// *** BATCH CMD : setCable -port usb21 -baud -1
+ Server Name = localhost, Port = 50001.
+INFO:iMPACT - Client connected to Server: localhost, Port: 50001.
+INFO:iMPACT - Connecting to cable (Usb Port - USB21).
+INFO:iMPACT - Checking cable driver.
+INFO:iMPACT -  Driver file xusb_xlp.sys found.
+INFO:iMPACT -  Driver version: src=1029, dest=1029.
+INFO:iMPACT -  Driver windrvr6.sys version = 11.5.0.0.INFO:iMPACT -  WinDriver v11.5.0 Jungo Connectivity (c) 1997 - 2014 Build Date:   Jan 26 2014 x86_64 64bit SYS 13:30:18, version = 1150.
+INFO:iMPACT - Invalid device driver license.
+INFO:iMPACT - Cable connection failed.
+Enumerating cables. Please wait.
+PROGRESS_START - Starting Operation.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+ Source driver files not found.
+The Platform Cable USB is not detected. Please connect a cable.If a cable isconnected, please disconnect
+and reconnect to the usb port, follow the instructions in the 'Found NewHardware Wizard', then retry
+the Cable Setup operation.
+PROGRESS_END - End Operation.
+Elapsed time =      0 sec.
+INFO:iMPACT - Digilent Plugin: Plugin Version: 2.4.4
+INFO:iMPACT - Digilent Plugin: no JTAG device was found.
+WARNING:iMPACT - The cable selected is not avaliable, please select a different   one.
+// *** BATCH CMD : setCable -port usb21 -baud -1
+ Server Name = localhost, Port = 50001.
+INFO:iMPACT - Client connected to Server: localhost, Port: 50001.
+INFO:iMPACT - Connecting to cable (Usb Port - USB21).
+INFO:iMPACT - Checking cable driver.
+INFO:iMPACT -  Driver file xusb_xlp.sys found.
+INFO:iMPACT -  Driver version: src=1029, dest=1029.
+INFO:iMPACT -  Driver windrvr6.sys version = 11.5.0.0.INFO:iMPACT -  WinDriver v11.5.0 Jungo Connectivity (c) 1997 - 2014 Build Date:   Jan 26 2014 x86_64 64bit SYS 13:30:18, version = 1150.
+INFO:iMPACT - Invalid device driver license.
+INFO:iMPACT - Cable connection failed.

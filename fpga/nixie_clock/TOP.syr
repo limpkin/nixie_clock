@@ -1,0 +1,530 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Reading design: TOP.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "TOP.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "TOP"
+Output Format                      : NGC
+Target Device                      : xc3s50an-4-tqg144
+
+---- Source Options
+Top Module Name                    : TOP
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : Soft
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/limpkin/Dropbox/Projets/nixie/fpga/nixie_clock/dcm_multiplier.vhd" in Library work.
+Entity <dcm_multiplier> compiled.
+Entity <dcm_multiplier> (Architecture <BEHAVIORAL>) compiled.
+Compiling vhdl file "C:/Users/limpkin/Dropbox/Projets/nixie/fpga/nixie_clock/pwm.vhd" in Library work.
+Entity <pwm> compiled.
+Entity <pwm> (Architecture <logic>) compiled.
+Compiling vhdl file "C:/Users/limpkin/Dropbox/Projets/nixie/fpga/nixie_clock/spi_slave.vhd" in Library work.
+Entity <spi_slave> compiled.
+Entity <spi_slave> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/limpkin/Dropbox/Projets/nixie/fpga/nixie_clock/TOP.vhd" in Library work.
+Entity <TOP> compiled.
+Entity <TOP> (Architecture <Behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <TOP> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <dcm_multiplier> in library <work> (architecture <BEHAVIORAL>).
+
+Analyzing hierarchy for entity <pwm> in library <work> (architecture <logic>) with generics.
+	bits_resolution = 14
+	phase_selwidth = 6
+	phases = 60
+
+Analyzing hierarchy for entity <spi_slave> in library <work> (architecture <Behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <TOP> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:753 - "C:/Users/limpkin/Dropbox/Projets/nixie/fpga/nixie_clock/TOP.vhd" line 70: Unconnected output port 'CLKIN_IBUFG_OUT' of component 'dcm_multiplier'.
+WARNING:Xst:753 - "C:/Users/limpkin/Dropbox/Projets/nixie/fpga/nixie_clock/TOP.vhd" line 70: Unconnected output port 'CLK0_OUT' of component 'dcm_multiplier'.
+Entity <TOP> analyzed. Unit <TOP> generated.
+
+Analyzing Entity <dcm_multiplier> in library <work> (Architecture <BEHAVIORAL>).
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <CLKIN_IBUFG_INST> in unit <dcm_multiplier>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <CLKIN_IBUFG_INST> in unit <dcm_multiplier>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <CLKIN_IBUFG_INST> in unit <dcm_multiplier>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <CLKIN_IBUFG_INST> in unit <dcm_multiplier>.
+    Set user-defined property "CLKDV_DIVIDE =  2.0000000000000000" for instance <DCM_SP_INST> in unit <dcm_multiplier>.
+    Set user-defined property "CLKFX_DIVIDE =  1" for instance <DCM_SP_INST> in unit <dcm_multiplier>.
+    Set user-defined property "CLKFX_MULTIPLY =  10" for instance <DCM_SP_INST> in unit <dcm_multiplier>.
+    Set user-defined property "CLKIN_DIVIDE_BY_2 =  FALSE" for instance <DCM_SP_INST> in unit <dcm_multiplier>.
+    Set user-defined property "CLKIN_PERIOD =  100.0000000000000000" for instance <DCM_SP_INST> in unit <dcm_multiplier>.
+    Set user-defined property "CLKOUT_PHASE_SHIFT =  NONE" for instance <DCM_SP_INST> in unit <dcm_multiplier>.
+    Set user-defined property "CLK_FEEDBACK =  1X" for instance <DCM_SP_INST> in unit <dcm_multiplier>.
+    Set user-defined property "DESKEW_ADJUST =  SYSTEM_SYNCHRONOUS" for instance <DCM_SP_INST> in unit <dcm_multiplier>.
+    Set user-defined property "DFS_FREQUENCY_MODE =  LOW" for instance <DCM_SP_INST> in unit <dcm_multiplier>.
+    Set user-defined property "DLL_FREQUENCY_MODE =  LOW" for instance <DCM_SP_INST> in unit <dcm_multiplier>.
+    Set user-defined property "DSS_MODE =  NONE" for instance <DCM_SP_INST> in unit <dcm_multiplier>.
+    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <DCM_SP_INST> in unit <dcm_multiplier>.
+    Set user-defined property "FACTORY_JF =  C080" for instance <DCM_SP_INST> in unit <dcm_multiplier>.
+    Set user-defined property "PHASE_SHIFT =  0" for instance <DCM_SP_INST> in unit <dcm_multiplier>.
+    Set user-defined property "STARTUP_WAIT =  FALSE" for instance <DCM_SP_INST> in unit <dcm_multiplier>.
+Entity <dcm_multiplier> analyzed. Unit <dcm_multiplier> generated.
+
+Analyzing generic Entity <pwm> in library <work> (Architecture <logic>).
+	bits_resolution = 14
+	phase_selwidth = 6
+	phases = 60
+WARNING:Xst:790 - "C:/Users/limpkin/Dropbox/Projets/nixie/fpga/nixie_clock/pwm.vhd" line 32: Index value(s) does not match array range, simulation mismatch.
+Entity <pwm> analyzed. Unit <pwm> generated.
+
+Analyzing Entity <spi_slave> in library <work> (Architecture <Behavioral>).
+Entity <spi_slave> analyzed. Unit <spi_slave> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <pwm>.
+    Related source file is "C:/Users/limpkin/Dropbox/Projets/nixie/fpga/nixie_clock/pwm.vhd".
+    Found 60-bit register for signal <PWM_OUT>.
+    Found 840-bit register for signal <compare_array>.
+    Found 14-bit up counter for signal <counter>.
+    Found 14-bit comparator equal for signal <PWM_OUT_0$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_1$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_10$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_11$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_12$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_13$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_14$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_15$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_16$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_17$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_18$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_19$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_2$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_20$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_21$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_22$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_23$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_24$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_25$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_26$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_27$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_28$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_29$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_3$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_30$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_31$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_32$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_33$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_34$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_35$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_36$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_37$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_38$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_39$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_4$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_40$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_41$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_42$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_43$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_44$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_45$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_46$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_47$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_48$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_49$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_5$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_50$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_51$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_52$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_53$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_54$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_55$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_56$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_57$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_58$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_59$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_6$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_7$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_8$cmp_eq0000> created at line 35.
+    Found 14-bit comparator equal for signal <PWM_OUT_9$cmp_eq0000> created at line 35.
+INFO:Xst:738 - HDL ADVISOR - 840 flip-flops were inferred for signal <compare_array>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Summary:
+	inferred   1 Counter(s).
+	inferred 900 D-type flip-flop(s).
+	inferred  60 Comparator(s).
+Unit <pwm> synthesized.
+
+
+Synthesizing Unit <spi_slave>.
+    Related source file is "C:/Users/limpkin/Dropbox/Projets/nixie/fpga/nixie_clock/spi_slave.vhd".
+    Found 1-bit register for signal <SPI_DONE>.
+    Found 1-bit register for signal <MOSI_latched>.
+    Found 24-bit register for signal <RxdData>.
+    Found 1-bit register for signal <SCLK_latched>.
+    Found 1-bit register for signal <SCLK_old>.
+    Found 1-bit register for signal <SS_latched>.
+    Found 1-bit register for signal <SS_old>.
+    Found 24-bit register for signal <TxData>.
+    Summary:
+	inferred  54 D-type flip-flop(s).
+Unit <spi_slave> synthesized.
+
+
+Synthesizing Unit <dcm_multiplier>.
+    Related source file is "C:/Users/limpkin/Dropbox/Projets/nixie/fpga/nixie_clock/dcm_multiplier.vhd".
+Unit <dcm_multiplier> synthesized.
+
+
+Synthesizing Unit <TOP>.
+    Related source file is "C:/Users/limpkin/Dropbox/Projets/nixie/fpga/nixie_clock/TOP.vhd".
+Unit <TOP> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 14-bit up counter                                     : 1
+# Registers                                            : 128
+ 1-bit register                                        : 66
+ 14-bit register                                       : 60
+ 24-bit register                                       : 2
+# Comparators                                          : 60
+ 14-bit comparator equal                               : 60
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 14-bit up counter                                     : 1
+# Registers                                            : 954
+ Flip-Flops                                            : 954
+# Comparators                                          : 60
+ 14-bit comparator equal                               : 60
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <TOP> ...
+
+Optimizing unit <pwm> ...
+
+Optimizing unit <spi_slave> ...
+
+Optimizing unit <dcm_multiplier> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block TOP, actual ratio is 118.
+Optimizing block <TOP> to meet ratio 100 (+ 5) of 704 slices :
+WARNING:Xst:2254 - Area constraint could not be met for block <TOP>, final ratio is 118.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 968
+ Flip-Flops                                            : 968
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : TOP.ngr
+Top Level Output File Name         : TOP
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : Soft
+
+Design Statistics
+# IOs                              : 65
+
+Cell Usage :
+# BELS                             : 987
+#      GND                         : 2
+#      INV                         : 1
+#      LUT1                        : 13
+#      LUT2                        : 2
+#      LUT3                        : 25
+#      LUT3_D                      : 1
+#      LUT4                        : 485
+#      LUT4_D                      : 8
+#      LUT4_L                      : 1
+#      MUXCY                       : 433
+#      VCC                         : 2
+#      XORCY                       : 14
+# FlipFlops/Latches                : 968
+#      FD                          : 19
+#      FDE                         : 888
+#      FDR                         : 1
+#      FDRE                        : 60
+# Clock Buffers                    : 2
+#      BUFG                        : 2
+# IO Buffers                       : 65
+#      IBUF                        : 3
+#      IBUFG                       : 1
+#      OBUF                        : 61
+# DCMs                             : 1
+#      DCM_SP                      : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50antqg144-4 
+
+ Number of Slices:                      832  out of    704   118% (*) 
+ Number of Slice Flip Flops:            968  out of   1408    68%  
+ Number of 4 input LUTs:                536  out of   1408    38%  
+ Number of IOs:                          65
+ Number of bonded IOBs:                  64  out of    108    59%  
+ Number of GCLKs:                         2  out of     24     8%  
+ Number of DCMs:                          1  out of      2    50%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk_in                             | DCM_SP_INST:CLKFX      | 968   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 59.080ns (Maximum Frequency: 16.926MHz)
+   Minimum input arrival time before clock: 1.521ns
+   Maximum output required time after clock: 5.531ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_in'
+  Clock period: 59.080ns (frequency: 16.926MHz)
+  Total number of paths / destination ports: 11340 / 1913
+-------------------------------------------------------------------------
+Delay:               5.908ns (Levels of Logic = 4)
+  Source:            C2/SPI_DONE (FF)
+  Destination:       C1/compare_array_19_0 (FF)
+  Source Clock:      clk_in rising 10.0X
+  Destination Clock: clk_in rising 10.0X
+
+  Data Path: C2/SPI_DONE to C1/compare_array_19_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.591   0.590  SPI_DONE (SPI_DONE)
+     end scope: 'C2'
+     LUT3:I0->O            8   0.648   0.760  pwm_duty_val_latch1 (pwm_duty_val_latch)
+     begin scope: 'C1'
+     LUT4_D:I3->O          7   0.648   0.711  compare_array_33_and000011 (N8)
+     LUT4:I3->O           14   0.648   1.000  compare_array_41_and00001 (compare_array_41_and0000)
+     FDE:CE                    0.312          compare_array_41_0
+    ----------------------------------------
+    Total                      5.908ns (2.847ns logic, 3.061ns route)
+                                       (48.2% logic, 51.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_in'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              1.521ns (Levels of Logic = 2)
+  Source:            spi_clk_in (PAD)
+  Destination:       C2/SCLK_latched (FF)
+  Destination Clock: clk_in rising 10.0X
+
+  Data Path: spi_clk_in to C2/SCLK_latched
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.849   0.420  spi_clk_in_IBUF (spi_clk_in_IBUF)
+     begin scope: 'C2'
+     FD:D                      0.252          SCLK_latched
+    ----------------------------------------
+    Total                      1.521ns (1.101ns logic, 0.420ns route)
+                                       (72.4% logic, 27.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_in'
+  Total number of paths / destination ports: 61 / 61
+-------------------------------------------------------------------------
+Offset:              5.531ns (Levels of Logic = 2)
+  Source:            C2/TxData_23 (FF)
+  Destination:       spi_miso_out (PAD)
+  Source Clock:      clk_in rising 10.0X
+
+  Data Path: C2/TxData_23 to spi_miso_out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.591   0.420  TxData_23 (TxData_23)
+     end scope: 'C2'
+     OBUF:I->O                 4.520          spi_miso_out_OBUF (spi_miso_out)
+    ----------------------------------------
+    Total                      5.531ns (5.111ns logic, 0.420ns route)
+                                       (92.4% logic, 7.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.62 secs
+ 
+--> 
+
+Total memory usage is 246268 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

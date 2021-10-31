@@ -1,0 +1,4 @@
+vhdl work "spi_slave.vhd"
+vhdl work "pwm.vhd"
+vhdl work "dcm_multiplier.vhd"
+vhdl work "TOP.vhd"

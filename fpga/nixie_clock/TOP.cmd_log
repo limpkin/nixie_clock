@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/limpkin/Dropbox/Projets/nixie/fpga/nixie_clock/TOP.xst" -ofn "C:/Users/limpkin/Dropbox/Projets/nixie/fpga/nixie_clock/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc3s50an-tqg144-4 TOP.ngc TOP.ngd  
+map -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 

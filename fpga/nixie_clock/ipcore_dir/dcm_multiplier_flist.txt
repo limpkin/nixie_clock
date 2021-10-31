@@ -1,0 +1,2 @@
+# Output products list for <dcm_multiplier>
+dcm_multiplier_flist.txt

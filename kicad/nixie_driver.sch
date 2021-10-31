@@ -1,0 +1,1017 @@
+EESchema Schematic File Version 2
+LIBS:nixieclock-rescue
+LIBS:limpkin
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:nixieclock-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 61 61
+Title "Nixie Driver"
+Date "2016-01-05"
+Rev "A1"
+Comp "Stephan Electronics"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 3400 3700 0    60   Input ~ 0
+NIXIE_PWM
+$Comp
+L R R51
+U 1 1 568E126F
+P 4800 3700
+AR Path="/568CF03B/568E126F" Ref="R51"  Part="1" 
+AR Path="/568E8CAC/568E126F" Ref="R53"  Part="1" 
+AR Path="/568E8DFF/568E126F" Ref="R55"  Part="1" 
+AR Path="/568E8E04/568E126F" Ref="R57"  Part="1" 
+AR Path="/568E91E5/568E126F" Ref="R59"  Part="1" 
+AR Path="/568E91EA/568E126F" Ref="R61"  Part="1" 
+AR Path="/568E91EF/568E126F" Ref="R63"  Part="1" 
+AR Path="/568E91F4/568E126F" Ref="R65"  Part="1" 
+AR Path="/568E9ABD/568E126F" Ref="R67"  Part="1" 
+AR Path="/568E9AC2/568E126F" Ref="R69"  Part="1" 
+AR Path="/568E9AC7/568E126F" Ref="R71"  Part="1" 
+AR Path="/568E9ACC/568E126F" Ref="R73"  Part="1" 
+AR Path="/568E9AD1/568E126F" Ref="R75"  Part="1" 
+AR Path="/568E9AD6/568E126F" Ref="R77"  Part="1" 
+AR Path="/568EA369/568E126F" Ref="R79"  Part="1" 
+AR Path="/568EA36E/568E126F" Ref="R81"  Part="1" 
+AR Path="/568EA373/568E126F" Ref="R83"  Part="1" 
+AR Path="/568EA378/568E126F" Ref="R85"  Part="1" 
+AR Path="/568EA37D/568E126F" Ref="R87"  Part="1" 
+AR Path="/568EA382/568E126F" Ref="R89"  Part="1" 
+AR Path="/568EA387/568E126F" Ref="R91"  Part="1" 
+AR Path="/568EA38C/568E126F" Ref="R93"  Part="1" 
+AR Path="/568EA391/568E126F" Ref="R95"  Part="1" 
+AR Path="/568EA396/568E126F" Ref="R97"  Part="1" 
+AR Path="/568EA39B/568E126F" Ref="R99"  Part="1" 
+AR Path="/568EA3A0/568E126F" Ref="R101"  Part="1" 
+AR Path="/568EA3A5/568E126F" Ref="R103"  Part="1" 
+AR Path="/568EA3AA/568E126F" Ref="R105"  Part="1" 
+AR Path="/568EA3AF/568E126F" Ref="R107"  Part="1" 
+AR Path="/568EBC7F/568E126F" Ref="R109"  Part="1" 
+AR Path="/568EBC84/568E126F" Ref="R111"  Part="1" 
+AR Path="/568EBC89/568E126F" Ref="R113"  Part="1" 
+AR Path="/568EBC8E/568E126F" Ref="R115"  Part="1" 
+AR Path="/568EBC93/568E126F" Ref="R117"  Part="1" 
+AR Path="/568EBC98/568E126F" Ref="R119"  Part="1" 
+AR Path="/568EBC9D/568E126F" Ref="R121"  Part="1" 
+AR Path="/568EBCA2/568E126F" Ref="R123"  Part="1" 
+AR Path="/568EBCA7/568E126F" Ref="R125"  Part="1" 
+AR Path="/568EBCAC/568E126F" Ref="R127"  Part="1" 
+AR Path="/568EBCB1/568E126F" Ref="R129"  Part="1" 
+AR Path="/568EBCB6/568E126F" Ref="R131"  Part="1" 
+AR Path="/568EBCBB/568E126F" Ref="R133"  Part="1" 
+AR Path="/568EBCC0/568E126F" Ref="R135"  Part="1" 
+AR Path="/568EBCC5/568E126F" Ref="R137"  Part="1" 
+AR Path="/568EBCCF/568E126F" Ref="R139"  Part="1" 
+AR Path="/568EBCD4/568E126F" Ref="R141"  Part="1" 
+AR Path="/568EBCD9/568E126F" Ref="R143"  Part="1" 
+AR Path="/568EBCDE/568E126F" Ref="R145"  Part="1" 
+AR Path="/568EBCE3/568E126F" Ref="R147"  Part="1" 
+AR Path="/568EBCE8/568E126F" Ref="R149"  Part="1" 
+AR Path="/568EBCED/568E126F" Ref="R151"  Part="1" 
+AR Path="/568EBCF2/568E126F" Ref="R153"  Part="1" 
+AR Path="/568EBCF7/568E126F" Ref="R155"  Part="1" 
+AR Path="/568EBCFC/568E126F" Ref="R157"  Part="1" 
+AR Path="/568EBD01/568E126F" Ref="R159"  Part="1" 
+AR Path="/568EBD06/568E126F" Ref="R161"  Part="1" 
+AR Path="/568EBD0B/568E126F" Ref="R163"  Part="1" 
+AR Path="/568EBD10/568E126F" Ref="R165"  Part="1" 
+AR Path="/568EBD15/568E126F" Ref="R167"  Part="1" 
+AR Path="/568EBD1A/568E126F" Ref="R169"  Part="1" 
+F 0 "R169" V 4880 3700 50  0000 C CNN
+F 1 "1k" V 4800 3700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4730 3700 50  0001 C CNN
+F 3 "" H 4800 3700 50  0000 C CNN
+	1    4800 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C50
+U 1 1 568E12B6
+P 5300 4000
+AR Path="/568CF03B/568E12B6" Ref="C50"  Part="1" 
+AR Path="/568E8CAC/568E12B6" Ref="C52"  Part="1" 
+AR Path="/568E8DFF/568E12B6" Ref="C54"  Part="1" 
+AR Path="/568E8E04/568E12B6" Ref="C56"  Part="1" 
+AR Path="/568E91E5/568E12B6" Ref="C58"  Part="1" 
+AR Path="/568E91EA/568E12B6" Ref="C60"  Part="1" 
+AR Path="/568E91EF/568E12B6" Ref="C62"  Part="1" 
+AR Path="/568E91F4/568E12B6" Ref="C64"  Part="1" 
+AR Path="/568E9ABD/568E12B6" Ref="C66"  Part="1" 
+AR Path="/568E9AC2/568E12B6" Ref="C68"  Part="1" 
+AR Path="/568E9AC7/568E12B6" Ref="C70"  Part="1" 
+AR Path="/568E9ACC/568E12B6" Ref="C72"  Part="1" 
+AR Path="/568E9AD1/568E12B6" Ref="C74"  Part="1" 
+AR Path="/568E9AD6/568E12B6" Ref="C76"  Part="1" 
+AR Path="/568EA369/568E12B6" Ref="C78"  Part="1" 
+AR Path="/568EA36E/568E12B6" Ref="C80"  Part="1" 
+AR Path="/568EA373/568E12B6" Ref="C82"  Part="1" 
+AR Path="/568EA378/568E12B6" Ref="C84"  Part="1" 
+AR Path="/568EA37D/568E12B6" Ref="C86"  Part="1" 
+AR Path="/568EA382/568E12B6" Ref="C88"  Part="1" 
+AR Path="/568EA387/568E12B6" Ref="C90"  Part="1" 
+AR Path="/568EA38C/568E12B6" Ref="C92"  Part="1" 
+AR Path="/568EA391/568E12B6" Ref="C94"  Part="1" 
+AR Path="/568EA396/568E12B6" Ref="C96"  Part="1" 
+AR Path="/568EA39B/568E12B6" Ref="C98"  Part="1" 
+AR Path="/568EA3A0/568E12B6" Ref="C100"  Part="1" 
+AR Path="/568EA3A5/568E12B6" Ref="C102"  Part="1" 
+AR Path="/568EA3AA/568E12B6" Ref="C104"  Part="1" 
+AR Path="/568EA3AF/568E12B6" Ref="C106"  Part="1" 
+AR Path="/568EBC7F/568E12B6" Ref="C108"  Part="1" 
+AR Path="/568EBC84/568E12B6" Ref="C110"  Part="1" 
+AR Path="/568EBC89/568E12B6" Ref="C112"  Part="1" 
+AR Path="/568EBC8E/568E12B6" Ref="C114"  Part="1" 
+AR Path="/568EBC93/568E12B6" Ref="C116"  Part="1" 
+AR Path="/568EBC98/568E12B6" Ref="C118"  Part="1" 
+AR Path="/568EBC9D/568E12B6" Ref="C120"  Part="1" 
+AR Path="/568EBCA2/568E12B6" Ref="C122"  Part="1" 
+AR Path="/568EBCA7/568E12B6" Ref="C124"  Part="1" 
+AR Path="/568EBCAC/568E12B6" Ref="C126"  Part="1" 
+AR Path="/568EBCB1/568E12B6" Ref="C128"  Part="1" 
+AR Path="/568EBCB6/568E12B6" Ref="C130"  Part="1" 
+AR Path="/568EBCBB/568E12B6" Ref="C132"  Part="1" 
+AR Path="/568EBCC0/568E12B6" Ref="C134"  Part="1" 
+AR Path="/568EBCC5/568E12B6" Ref="C136"  Part="1" 
+AR Path="/568EBCCF/568E12B6" Ref="C138"  Part="1" 
+AR Path="/568EBCD4/568E12B6" Ref="C140"  Part="1" 
+AR Path="/568EBCD9/568E12B6" Ref="C142"  Part="1" 
+AR Path="/568EBCDE/568E12B6" Ref="C144"  Part="1" 
+AR Path="/568EBCE3/568E12B6" Ref="C146"  Part="1" 
+AR Path="/568EBCE8/568E12B6" Ref="C148"  Part="1" 
+AR Path="/568EBCED/568E12B6" Ref="C150"  Part="1" 
+AR Path="/568EBCF2/568E12B6" Ref="C152"  Part="1" 
+AR Path="/568EBCF7/568E12B6" Ref="C154"  Part="1" 
+AR Path="/568EBCFC/568E12B6" Ref="C156"  Part="1" 
+AR Path="/568EBD01/568E12B6" Ref="C158"  Part="1" 
+AR Path="/568EBD06/568E12B6" Ref="C160"  Part="1" 
+AR Path="/568EBD0B/568E12B6" Ref="C162"  Part="1" 
+AR Path="/568EBD10/568E12B6" Ref="C164"  Part="1" 
+AR Path="/568EBD15/568E12B6" Ref="C166"  Part="1" 
+AR Path="/568EBD1A/568E12B6" Ref="C168"  Part="1" 
+F 0 "C168" H 5325 4100 50  0000 L CNN
+F 1 "1uF" H 5325 3900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5338 3850 50  0001 C CNN
+F 3 "" H 5300 4000 50  0000 C CNN
+	1    5300 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 3700 4650 3700
+$Comp
+L GND #PWR81
+U 1 1 568E12FD
+P 5300 4200
+AR Path="/568CF03B/568E12FD" Ref="#PWR81"  Part="1" 
+AR Path="/568E8CAC/568E12FD" Ref="#PWR86"  Part="1" 
+AR Path="/568E8DFF/568E12FD" Ref="#PWR91"  Part="1" 
+AR Path="/568E8E04/568E12FD" Ref="#PWR96"  Part="1" 
+AR Path="/568E91E5/568E12FD" Ref="#PWR101"  Part="1" 
+AR Path="/568E91EA/568E12FD" Ref="#PWR106"  Part="1" 
+AR Path="/568E91EF/568E12FD" Ref="#PWR111"  Part="1" 
+AR Path="/568E91F4/568E12FD" Ref="#PWR116"  Part="1" 
+AR Path="/568E9ABD/568E12FD" Ref="#PWR121"  Part="1" 
+AR Path="/568E9AC2/568E12FD" Ref="#PWR126"  Part="1" 
+AR Path="/568E9AC7/568E12FD" Ref="#PWR131"  Part="1" 
+AR Path="/568E9ACC/568E12FD" Ref="#PWR136"  Part="1" 
+AR Path="/568E9AD1/568E12FD" Ref="#PWR141"  Part="1" 
+AR Path="/568E9AD6/568E12FD" Ref="#PWR146"  Part="1" 
+AR Path="/568EA369/568E12FD" Ref="#PWR151"  Part="1" 
+AR Path="/568EA36E/568E12FD" Ref="#PWR156"  Part="1" 
+AR Path="/568EA373/568E12FD" Ref="#PWR161"  Part="1" 
+AR Path="/568EA378/568E12FD" Ref="#PWR166"  Part="1" 
+AR Path="/568EA37D/568E12FD" Ref="#PWR171"  Part="1" 
+AR Path="/568EA382/568E12FD" Ref="#PWR176"  Part="1" 
+AR Path="/568EA387/568E12FD" Ref="#PWR181"  Part="1" 
+AR Path="/568EA38C/568E12FD" Ref="#PWR186"  Part="1" 
+AR Path="/568EA391/568E12FD" Ref="#PWR191"  Part="1" 
+AR Path="/568EA396/568E12FD" Ref="#PWR196"  Part="1" 
+AR Path="/568EA39B/568E12FD" Ref="#PWR201"  Part="1" 
+AR Path="/568EA3A0/568E12FD" Ref="#PWR206"  Part="1" 
+AR Path="/568EA3A5/568E12FD" Ref="#PWR211"  Part="1" 
+AR Path="/568EA3AA/568E12FD" Ref="#PWR216"  Part="1" 
+AR Path="/568EA3AF/568E12FD" Ref="#PWR221"  Part="1" 
+AR Path="/568EBC7F/568E12FD" Ref="#PWR226"  Part="1" 
+AR Path="/568EBC84/568E12FD" Ref="#PWR231"  Part="1" 
+AR Path="/568EBC89/568E12FD" Ref="#PWR236"  Part="1" 
+AR Path="/568EBC8E/568E12FD" Ref="#PWR241"  Part="1" 
+AR Path="/568EBC93/568E12FD" Ref="#PWR246"  Part="1" 
+AR Path="/568EBC98/568E12FD" Ref="#PWR251"  Part="1" 
+AR Path="/568EBC9D/568E12FD" Ref="#PWR256"  Part="1" 
+AR Path="/568EBCA2/568E12FD" Ref="#PWR261"  Part="1" 
+AR Path="/568EBCA7/568E12FD" Ref="#PWR266"  Part="1" 
+AR Path="/568EBCAC/568E12FD" Ref="#PWR271"  Part="1" 
+AR Path="/568EBCB1/568E12FD" Ref="#PWR276"  Part="1" 
+AR Path="/568EBCB6/568E12FD" Ref="#PWR281"  Part="1" 
+AR Path="/568EBCBB/568E12FD" Ref="#PWR286"  Part="1" 
+AR Path="/568EBCC0/568E12FD" Ref="#PWR291"  Part="1" 
+AR Path="/568EBCC5/568E12FD" Ref="#PWR296"  Part="1" 
+AR Path="/568EBCCF/568E12FD" Ref="#PWR301"  Part="1" 
+AR Path="/568EBCD4/568E12FD" Ref="#PWR306"  Part="1" 
+AR Path="/568EBCD9/568E12FD" Ref="#PWR311"  Part="1" 
+AR Path="/568EBCDE/568E12FD" Ref="#PWR316"  Part="1" 
+AR Path="/568EBCE3/568E12FD" Ref="#PWR321"  Part="1" 
+AR Path="/568EBCE8/568E12FD" Ref="#PWR326"  Part="1" 
+AR Path="/568EBCED/568E12FD" Ref="#PWR331"  Part="1" 
+AR Path="/568EBCF2/568E12FD" Ref="#PWR336"  Part="1" 
+AR Path="/568EBCF7/568E12FD" Ref="#PWR341"  Part="1" 
+AR Path="/568EBCFC/568E12FD" Ref="#PWR346"  Part="1" 
+AR Path="/568EBD01/568E12FD" Ref="#PWR351"  Part="1" 
+AR Path="/568EBD06/568E12FD" Ref="#PWR356"  Part="1" 
+AR Path="/568EBD0B/568E12FD" Ref="#PWR361"  Part="1" 
+AR Path="/568EBD10/568E12FD" Ref="#PWR366"  Part="1" 
+AR Path="/568EBD15/568E12FD" Ref="#PWR371"  Part="1" 
+AR Path="/568EBD1A/568E12FD" Ref="#PWR376"  Part="1" 
+F 0 "#PWR376" H 5300 3950 50  0001 C CNN
+F 1 "GND" H 5300 4050 50  0000 C CNN
+F 2 "" H 5300 4200 50  0000 C CNN
+F 3 "" H 5300 4200 50  0000 C CNN
+	1    5300 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 4200 5300 4150
+Wire Wire Line
+	4950 3700 5650 3700
+Wire Wire Line
+	5300 3700 5300 3850
+$Comp
+L FCX458 Q1
+U 1 1 568E1503
+P 5850 3700
+AR Path="/568CF03B/568E1503" Ref="Q1"  Part="1" 
+AR Path="/568E8CAC/568E1503" Ref="Q2"  Part="1" 
+AR Path="/568E8DFF/568E1503" Ref="Q3"  Part="1" 
+AR Path="/568E8E04/568E1503" Ref="Q4"  Part="1" 
+AR Path="/568E91E5/568E1503" Ref="Q5"  Part="1" 
+AR Path="/568E91EA/568E1503" Ref="Q6"  Part="1" 
+AR Path="/568E91EF/568E1503" Ref="Q7"  Part="1" 
+AR Path="/568E91F4/568E1503" Ref="Q8"  Part="1" 
+AR Path="/568E9ABD/568E1503" Ref="Q9"  Part="1" 
+AR Path="/568E9AC2/568E1503" Ref="Q10"  Part="1" 
+AR Path="/568E9AC7/568E1503" Ref="Q11"  Part="1" 
+AR Path="/568E9ACC/568E1503" Ref="Q12"  Part="1" 
+AR Path="/568E9AD1/568E1503" Ref="Q13"  Part="1" 
+AR Path="/568E9AD6/568E1503" Ref="Q14"  Part="1" 
+AR Path="/568EA369/568E1503" Ref="Q15"  Part="1" 
+AR Path="/568EA36E/568E1503" Ref="Q16"  Part="1" 
+AR Path="/568EA373/568E1503" Ref="Q17"  Part="1" 
+AR Path="/568EA378/568E1503" Ref="Q18"  Part="1" 
+AR Path="/568EA37D/568E1503" Ref="Q19"  Part="1" 
+AR Path="/568EA382/568E1503" Ref="Q20"  Part="1" 
+AR Path="/568EA387/568E1503" Ref="Q21"  Part="1" 
+AR Path="/568EA38C/568E1503" Ref="Q22"  Part="1" 
+AR Path="/568EA391/568E1503" Ref="Q23"  Part="1" 
+AR Path="/568EA396/568E1503" Ref="Q24"  Part="1" 
+AR Path="/568EA39B/568E1503" Ref="Q25"  Part="1" 
+AR Path="/568EA3A0/568E1503" Ref="Q26"  Part="1" 
+AR Path="/568EA3A5/568E1503" Ref="Q27"  Part="1" 
+AR Path="/568EA3AA/568E1503" Ref="Q28"  Part="1" 
+AR Path="/568EA3AF/568E1503" Ref="Q29"  Part="1" 
+AR Path="/568EBC7F/568E1503" Ref="Q30"  Part="1" 
+AR Path="/568EBC84/568E1503" Ref="Q31"  Part="1" 
+AR Path="/568EBC89/568E1503" Ref="Q32"  Part="1" 
+AR Path="/568EBC8E/568E1503" Ref="Q33"  Part="1" 
+AR Path="/568EBC93/568E1503" Ref="Q34"  Part="1" 
+AR Path="/568EBC98/568E1503" Ref="Q35"  Part="1" 
+AR Path="/568EBC9D/568E1503" Ref="Q36"  Part="1" 
+AR Path="/568EBCA2/568E1503" Ref="Q37"  Part="1" 
+AR Path="/568EBCA7/568E1503" Ref="Q38"  Part="1" 
+AR Path="/568EBCAC/568E1503" Ref="Q39"  Part="1" 
+AR Path="/568EBCB1/568E1503" Ref="Q40"  Part="1" 
+AR Path="/568EBCB6/568E1503" Ref="Q41"  Part="1" 
+AR Path="/568EBCBB/568E1503" Ref="Q42"  Part="1" 
+AR Path="/568EBCC0/568E1503" Ref="Q43"  Part="1" 
+AR Path="/568EBCC5/568E1503" Ref="Q44"  Part="1" 
+AR Path="/568EBCCF/568E1503" Ref="Q45"  Part="1" 
+AR Path="/568EBCD4/568E1503" Ref="Q46"  Part="1" 
+AR Path="/568EBCD9/568E1503" Ref="Q47"  Part="1" 
+AR Path="/568EBCDE/568E1503" Ref="Q48"  Part="1" 
+AR Path="/568EBCE3/568E1503" Ref="Q49"  Part="1" 
+AR Path="/568EBCE8/568E1503" Ref="Q50"  Part="1" 
+AR Path="/568EBCED/568E1503" Ref="Q51"  Part="1" 
+AR Path="/568EBCF2/568E1503" Ref="Q52"  Part="1" 
+AR Path="/568EBCF7/568E1503" Ref="Q53"  Part="1" 
+AR Path="/568EBCFC/568E1503" Ref="Q54"  Part="1" 
+AR Path="/568EBD01/568E1503" Ref="Q55"  Part="1" 
+AR Path="/568EBD06/568E1503" Ref="Q56"  Part="1" 
+AR Path="/568EBD0B/568E1503" Ref="Q57"  Part="1" 
+AR Path="/568EBD10/568E1503" Ref="Q58"  Part="1" 
+AR Path="/568EBD15/568E1503" Ref="Q59"  Part="1" 
+AR Path="/568EBD1A/568E1503" Ref="Q60"  Part="1" 
+F 0 "Q60" H 6050 3775 50  0000 L CNN
+F 1 "FCX458" H 6050 3700 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT89-3_Housing_Handsoldering" H 6050 3625 50  0001 L CIN
+F 3 "" H 5850 3700 50  0000 L CNN
+	1    5850 3700
+	1    0    0    -1  
+$EndComp
+Connection ~ 5300 3700
+$Comp
+L R R52
+U 1 1 568E1558
+P 5950 4150
+AR Path="/568CF03B/568E1558" Ref="R52"  Part="1" 
+AR Path="/568E8CAC/568E1558" Ref="R54"  Part="1" 
+AR Path="/568E8DFF/568E1558" Ref="R56"  Part="1" 
+AR Path="/568E8E04/568E1558" Ref="R58"  Part="1" 
+AR Path="/568E91E5/568E1558" Ref="R60"  Part="1" 
+AR Path="/568E91EA/568E1558" Ref="R62"  Part="1" 
+AR Path="/568E91EF/568E1558" Ref="R64"  Part="1" 
+AR Path="/568E91F4/568E1558" Ref="R66"  Part="1" 
+AR Path="/568E9ABD/568E1558" Ref="R68"  Part="1" 
+AR Path="/568E9AC2/568E1558" Ref="R70"  Part="1" 
+AR Path="/568E9AC7/568E1558" Ref="R72"  Part="1" 
+AR Path="/568E9ACC/568E1558" Ref="R74"  Part="1" 
+AR Path="/568E9AD1/568E1558" Ref="R76"  Part="1" 
+AR Path="/568E9AD6/568E1558" Ref="R78"  Part="1" 
+AR Path="/568EA369/568E1558" Ref="R80"  Part="1" 
+AR Path="/568EA36E/568E1558" Ref="R82"  Part="1" 
+AR Path="/568EA373/568E1558" Ref="R84"  Part="1" 
+AR Path="/568EA378/568E1558" Ref="R86"  Part="1" 
+AR Path="/568EA37D/568E1558" Ref="R88"  Part="1" 
+AR Path="/568EA382/568E1558" Ref="R90"  Part="1" 
+AR Path="/568EA387/568E1558" Ref="R92"  Part="1" 
+AR Path="/568EA38C/568E1558" Ref="R94"  Part="1" 
+AR Path="/568EA391/568E1558" Ref="R96"  Part="1" 
+AR Path="/568EA396/568E1558" Ref="R98"  Part="1" 
+AR Path="/568EA39B/568E1558" Ref="R100"  Part="1" 
+AR Path="/568EA3A0/568E1558" Ref="R102"  Part="1" 
+AR Path="/568EA3A5/568E1558" Ref="R104"  Part="1" 
+AR Path="/568EA3AA/568E1558" Ref="R106"  Part="1" 
+AR Path="/568EA3AF/568E1558" Ref="R108"  Part="1" 
+AR Path="/568EBC7F/568E1558" Ref="R110"  Part="1" 
+AR Path="/568EBC84/568E1558" Ref="R112"  Part="1" 
+AR Path="/568EBC89/568E1558" Ref="R114"  Part="1" 
+AR Path="/568EBC8E/568E1558" Ref="R116"  Part="1" 
+AR Path="/568EBC93/568E1558" Ref="R118"  Part="1" 
+AR Path="/568EBC98/568E1558" Ref="R120"  Part="1" 
+AR Path="/568EBC9D/568E1558" Ref="R122"  Part="1" 
+AR Path="/568EBCA2/568E1558" Ref="R124"  Part="1" 
+AR Path="/568EBCA7/568E1558" Ref="R126"  Part="1" 
+AR Path="/568EBCAC/568E1558" Ref="R128"  Part="1" 
+AR Path="/568EBCB1/568E1558" Ref="R130"  Part="1" 
+AR Path="/568EBCB6/568E1558" Ref="R132"  Part="1" 
+AR Path="/568EBCBB/568E1558" Ref="R134"  Part="1" 
+AR Path="/568EBCC0/568E1558" Ref="R136"  Part="1" 
+AR Path="/568EBCC5/568E1558" Ref="R138"  Part="1" 
+AR Path="/568EBCCF/568E1558" Ref="R140"  Part="1" 
+AR Path="/568EBCD4/568E1558" Ref="R142"  Part="1" 
+AR Path="/568EBCD9/568E1558" Ref="R144"  Part="1" 
+AR Path="/568EBCDE/568E1558" Ref="R146"  Part="1" 
+AR Path="/568EBCE3/568E1558" Ref="R148"  Part="1" 
+AR Path="/568EBCE8/568E1558" Ref="R150"  Part="1" 
+AR Path="/568EBCED/568E1558" Ref="R152"  Part="1" 
+AR Path="/568EBCF2/568E1558" Ref="R154"  Part="1" 
+AR Path="/568EBCF7/568E1558" Ref="R156"  Part="1" 
+AR Path="/568EBCFC/568E1558" Ref="R158"  Part="1" 
+AR Path="/568EBD01/568E1558" Ref="R160"  Part="1" 
+AR Path="/568EBD06/568E1558" Ref="R162"  Part="1" 
+AR Path="/568EBD0B/568E1558" Ref="R164"  Part="1" 
+AR Path="/568EBD10/568E1558" Ref="R166"  Part="1" 
+AR Path="/568EBD15/568E1558" Ref="R168"  Part="1" 
+AR Path="/568EBD1A/568E1558" Ref="R170"  Part="1" 
+F 0 "R170" V 6030 4150 50  0000 C CNN
+F 1 "220" V 5950 4150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5880 4150 50  0001 C CNN
+F 3 "" H 5950 4150 50  0000 C CNN
+	1    5950 4150
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR82
+U 1 1 568E165B
+P 5950 4950
+AR Path="/568CF03B/568E165B" Ref="#PWR82"  Part="1" 
+AR Path="/568E8CAC/568E165B" Ref="#PWR87"  Part="1" 
+AR Path="/568E8DFF/568E165B" Ref="#PWR92"  Part="1" 
+AR Path="/568E8E04/568E165B" Ref="#PWR97"  Part="1" 
+AR Path="/568E91E5/568E165B" Ref="#PWR102"  Part="1" 
+AR Path="/568E91EA/568E165B" Ref="#PWR107"  Part="1" 
+AR Path="/568E91EF/568E165B" Ref="#PWR112"  Part="1" 
+AR Path="/568E91F4/568E165B" Ref="#PWR117"  Part="1" 
+AR Path="/568E9ABD/568E165B" Ref="#PWR122"  Part="1" 
+AR Path="/568E9AC2/568E165B" Ref="#PWR127"  Part="1" 
+AR Path="/568E9AC7/568E165B" Ref="#PWR132"  Part="1" 
+AR Path="/568E9ACC/568E165B" Ref="#PWR137"  Part="1" 
+AR Path="/568E9AD1/568E165B" Ref="#PWR142"  Part="1" 
+AR Path="/568E9AD6/568E165B" Ref="#PWR147"  Part="1" 
+AR Path="/568EA369/568E165B" Ref="#PWR152"  Part="1" 
+AR Path="/568EA36E/568E165B" Ref="#PWR157"  Part="1" 
+AR Path="/568EA373/568E165B" Ref="#PWR162"  Part="1" 
+AR Path="/568EA378/568E165B" Ref="#PWR167"  Part="1" 
+AR Path="/568EA37D/568E165B" Ref="#PWR172"  Part="1" 
+AR Path="/568EA382/568E165B" Ref="#PWR177"  Part="1" 
+AR Path="/568EA387/568E165B" Ref="#PWR182"  Part="1" 
+AR Path="/568EA38C/568E165B" Ref="#PWR187"  Part="1" 
+AR Path="/568EA391/568E165B" Ref="#PWR192"  Part="1" 
+AR Path="/568EA396/568E165B" Ref="#PWR197"  Part="1" 
+AR Path="/568EA39B/568E165B" Ref="#PWR202"  Part="1" 
+AR Path="/568EA3A0/568E165B" Ref="#PWR207"  Part="1" 
+AR Path="/568EA3A5/568E165B" Ref="#PWR212"  Part="1" 
+AR Path="/568EA3AA/568E165B" Ref="#PWR217"  Part="1" 
+AR Path="/568EA3AF/568E165B" Ref="#PWR222"  Part="1" 
+AR Path="/568EBC7F/568E165B" Ref="#PWR227"  Part="1" 
+AR Path="/568EBC84/568E165B" Ref="#PWR232"  Part="1" 
+AR Path="/568EBC89/568E165B" Ref="#PWR237"  Part="1" 
+AR Path="/568EBC8E/568E165B" Ref="#PWR242"  Part="1" 
+AR Path="/568EBC93/568E165B" Ref="#PWR247"  Part="1" 
+AR Path="/568EBC98/568E165B" Ref="#PWR252"  Part="1" 
+AR Path="/568EBC9D/568E165B" Ref="#PWR257"  Part="1" 
+AR Path="/568EBCA2/568E165B" Ref="#PWR262"  Part="1" 
+AR Path="/568EBCA7/568E165B" Ref="#PWR267"  Part="1" 
+AR Path="/568EBCAC/568E165B" Ref="#PWR272"  Part="1" 
+AR Path="/568EBCB1/568E165B" Ref="#PWR277"  Part="1" 
+AR Path="/568EBCB6/568E165B" Ref="#PWR282"  Part="1" 
+AR Path="/568EBCBB/568E165B" Ref="#PWR287"  Part="1" 
+AR Path="/568EBCC0/568E165B" Ref="#PWR292"  Part="1" 
+AR Path="/568EBCC5/568E165B" Ref="#PWR297"  Part="1" 
+AR Path="/568EBCCF/568E165B" Ref="#PWR302"  Part="1" 
+AR Path="/568EBCD4/568E165B" Ref="#PWR307"  Part="1" 
+AR Path="/568EBCD9/568E165B" Ref="#PWR312"  Part="1" 
+AR Path="/568EBCDE/568E165B" Ref="#PWR317"  Part="1" 
+AR Path="/568EBCE3/568E165B" Ref="#PWR322"  Part="1" 
+AR Path="/568EBCE8/568E165B" Ref="#PWR327"  Part="1" 
+AR Path="/568EBCED/568E165B" Ref="#PWR332"  Part="1" 
+AR Path="/568EBCF2/568E165B" Ref="#PWR337"  Part="1" 
+AR Path="/568EBCF7/568E165B" Ref="#PWR342"  Part="1" 
+AR Path="/568EBCFC/568E165B" Ref="#PWR347"  Part="1" 
+AR Path="/568EBD01/568E165B" Ref="#PWR352"  Part="1" 
+AR Path="/568EBD06/568E165B" Ref="#PWR357"  Part="1" 
+AR Path="/568EBD0B/568E165B" Ref="#PWR362"  Part="1" 
+AR Path="/568EBD10/568E165B" Ref="#PWR367"  Part="1" 
+AR Path="/568EBD15/568E165B" Ref="#PWR372"  Part="1" 
+AR Path="/568EBD1A/568E165B" Ref="#PWR377"  Part="1" 
+F 0 "#PWR377" H 5950 4700 50  0001 C CNN
+F 1 "GND" H 5950 4800 50  0000 C CNN
+F 2 "" H 5950 4950 50  0000 C CNN
+F 3 "" H 5950 4950 50  0000 C CNN
+	1    5950 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 4400 5950 4300
+Wire Wire Line
+	5950 4000 5950 3900
+$Comp
+L FUSE F2
+U 1 1 568E199E
+P 5950 4650
+AR Path="/568CF03B/568E199E" Ref="F2"  Part="1" 
+AR Path="/568E8CAC/568E199E" Ref="F4"  Part="1" 
+AR Path="/568E8DFF/568E199E" Ref="F6"  Part="1" 
+AR Path="/568E8E04/568E199E" Ref="F8"  Part="1" 
+AR Path="/568E91E5/568E199E" Ref="F10"  Part="1" 
+AR Path="/568E91EA/568E199E" Ref="F12"  Part="1" 
+AR Path="/568E91EF/568E199E" Ref="F14"  Part="1" 
+AR Path="/568E91F4/568E199E" Ref="F16"  Part="1" 
+AR Path="/568E9ABD/568E199E" Ref="F18"  Part="1" 
+AR Path="/568E9AC2/568E199E" Ref="F20"  Part="1" 
+AR Path="/568E9AC7/568E199E" Ref="F22"  Part="1" 
+AR Path="/568E9ACC/568E199E" Ref="F24"  Part="1" 
+AR Path="/568E9AD1/568E199E" Ref="F26"  Part="1" 
+AR Path="/568E9AD6/568E199E" Ref="F28"  Part="1" 
+AR Path="/568EA369/568E199E" Ref="F30"  Part="1" 
+AR Path="/568EA36E/568E199E" Ref="F32"  Part="1" 
+AR Path="/568EA373/568E199E" Ref="F34"  Part="1" 
+AR Path="/568EA378/568E199E" Ref="F36"  Part="1" 
+AR Path="/568EA37D/568E199E" Ref="F38"  Part="1" 
+AR Path="/568EA382/568E199E" Ref="F40"  Part="1" 
+AR Path="/568EA387/568E199E" Ref="F42"  Part="1" 
+AR Path="/568EA38C/568E199E" Ref="F44"  Part="1" 
+AR Path="/568EA391/568E199E" Ref="F46"  Part="1" 
+AR Path="/568EA396/568E199E" Ref="F48"  Part="1" 
+AR Path="/568EA39B/568E199E" Ref="F50"  Part="1" 
+AR Path="/568EA3A0/568E199E" Ref="F52"  Part="1" 
+AR Path="/568EA3A5/568E199E" Ref="F54"  Part="1" 
+AR Path="/568EA3AA/568E199E" Ref="F56"  Part="1" 
+AR Path="/568EA3AF/568E199E" Ref="F58"  Part="1" 
+AR Path="/568EBC7F/568E199E" Ref="F60"  Part="1" 
+AR Path="/568EBC84/568E199E" Ref="F62"  Part="1" 
+AR Path="/568EBC89/568E199E" Ref="F64"  Part="1" 
+AR Path="/568EBC8E/568E199E" Ref="F66"  Part="1" 
+AR Path="/568EBC93/568E199E" Ref="F68"  Part="1" 
+AR Path="/568EBC98/568E199E" Ref="F70"  Part="1" 
+AR Path="/568EBC9D/568E199E" Ref="F72"  Part="1" 
+AR Path="/568EBCA2/568E199E" Ref="F74"  Part="1" 
+AR Path="/568EBCA7/568E199E" Ref="F76"  Part="1" 
+AR Path="/568EBCAC/568E199E" Ref="F78"  Part="1" 
+AR Path="/568EBCB1/568E199E" Ref="F80"  Part="1" 
+AR Path="/568EBCB6/568E199E" Ref="F82"  Part="1" 
+AR Path="/568EBCBB/568E199E" Ref="F84"  Part="1" 
+AR Path="/568EBCC0/568E199E" Ref="F86"  Part="1" 
+AR Path="/568EBCC5/568E199E" Ref="F88"  Part="1" 
+AR Path="/568EBCCF/568E199E" Ref="F90"  Part="1" 
+AR Path="/568EBCD4/568E199E" Ref="F92"  Part="1" 
+AR Path="/568EBCD9/568E199E" Ref="F94"  Part="1" 
+AR Path="/568EBCDE/568E199E" Ref="F96"  Part="1" 
+AR Path="/568EBCE3/568E199E" Ref="F98"  Part="1" 
+AR Path="/568EBCE8/568E199E" Ref="F100"  Part="1" 
+AR Path="/568EBCED/568E199E" Ref="F102"  Part="1" 
+AR Path="/568EBCF2/568E199E" Ref="F104"  Part="1" 
+AR Path="/568EBCF7/568E199E" Ref="F106"  Part="1" 
+AR Path="/568EBCFC/568E199E" Ref="F108"  Part="1" 
+AR Path="/568EBD01/568E199E" Ref="F110"  Part="1" 
+AR Path="/568EBD06/568E199E" Ref="F112"  Part="1" 
+AR Path="/568EBD0B/568E199E" Ref="F114"  Part="1" 
+AR Path="/568EBD10/568E199E" Ref="F116"  Part="1" 
+AR Path="/568EBD15/568E199E" Ref="F118"  Part="1" 
+AR Path="/568EBD1A/568E199E" Ref="F120"  Part="1" 
+F 0 "F120" H 6050 4700 50  0000 C CNN
+F 1 "50mA/32VDC" H 5950 4550 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5950 4650 50  0001 C CNN
+F 3 "" H 5950 4650 50  0000 C CNN
+	1    5950 4650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L HT #PWR80
+U 1 1 568E1B01
+P 5950 3200
+AR Path="/568CF03B/568E1B01" Ref="#PWR80"  Part="1" 
+AR Path="/568E8CAC/568E1B01" Ref="#PWR85"  Part="1" 
+AR Path="/568E8DFF/568E1B01" Ref="#PWR90"  Part="1" 
+AR Path="/568E8E04/568E1B01" Ref="#PWR95"  Part="1" 
+AR Path="/568E91E5/568E1B01" Ref="#PWR100"  Part="1" 
+AR Path="/568E91EA/568E1B01" Ref="#PWR105"  Part="1" 
+AR Path="/568E91EF/568E1B01" Ref="#PWR110"  Part="1" 
+AR Path="/568E91F4/568E1B01" Ref="#PWR115"  Part="1" 
+AR Path="/568E9ABD/568E1B01" Ref="#PWR120"  Part="1" 
+AR Path="/568E9AC2/568E1B01" Ref="#PWR125"  Part="1" 
+AR Path="/568E9AC7/568E1B01" Ref="#PWR130"  Part="1" 
+AR Path="/568E9ACC/568E1B01" Ref="#PWR135"  Part="1" 
+AR Path="/568E9AD1/568E1B01" Ref="#PWR140"  Part="1" 
+AR Path="/568E9AD6/568E1B01" Ref="#PWR145"  Part="1" 
+AR Path="/568EA369/568E1B01" Ref="#PWR150"  Part="1" 
+AR Path="/568EA36E/568E1B01" Ref="#PWR155"  Part="1" 
+AR Path="/568EA373/568E1B01" Ref="#PWR160"  Part="1" 
+AR Path="/568EA378/568E1B01" Ref="#PWR165"  Part="1" 
+AR Path="/568EA37D/568E1B01" Ref="#PWR170"  Part="1" 
+AR Path="/568EA382/568E1B01" Ref="#PWR175"  Part="1" 
+AR Path="/568EA387/568E1B01" Ref="#PWR180"  Part="1" 
+AR Path="/568EA38C/568E1B01" Ref="#PWR185"  Part="1" 
+AR Path="/568EA391/568E1B01" Ref="#PWR190"  Part="1" 
+AR Path="/568EA396/568E1B01" Ref="#PWR195"  Part="1" 
+AR Path="/568EA39B/568E1B01" Ref="#PWR200"  Part="1" 
+AR Path="/568EA3A0/568E1B01" Ref="#PWR205"  Part="1" 
+AR Path="/568EA3A5/568E1B01" Ref="#PWR210"  Part="1" 
+AR Path="/568EA3AA/568E1B01" Ref="#PWR215"  Part="1" 
+AR Path="/568EA3AF/568E1B01" Ref="#PWR220"  Part="1" 
+AR Path="/568EBC7F/568E1B01" Ref="#PWR225"  Part="1" 
+AR Path="/568EBC84/568E1B01" Ref="#PWR230"  Part="1" 
+AR Path="/568EBC89/568E1B01" Ref="#PWR235"  Part="1" 
+AR Path="/568EBC8E/568E1B01" Ref="#PWR240"  Part="1" 
+AR Path="/568EBC93/568E1B01" Ref="#PWR245"  Part="1" 
+AR Path="/568EBC98/568E1B01" Ref="#PWR250"  Part="1" 
+AR Path="/568EBC9D/568E1B01" Ref="#PWR255"  Part="1" 
+AR Path="/568EBCA2/568E1B01" Ref="#PWR260"  Part="1" 
+AR Path="/568EBCA7/568E1B01" Ref="#PWR265"  Part="1" 
+AR Path="/568EBCAC/568E1B01" Ref="#PWR270"  Part="1" 
+AR Path="/568EBCB1/568E1B01" Ref="#PWR275"  Part="1" 
+AR Path="/568EBCB6/568E1B01" Ref="#PWR280"  Part="1" 
+AR Path="/568EBCBB/568E1B01" Ref="#PWR285"  Part="1" 
+AR Path="/568EBCC0/568E1B01" Ref="#PWR290"  Part="1" 
+AR Path="/568EBCC5/568E1B01" Ref="#PWR295"  Part="1" 
+AR Path="/568EBCCF/568E1B01" Ref="#PWR300"  Part="1" 
+AR Path="/568EBCD4/568E1B01" Ref="#PWR305"  Part="1" 
+AR Path="/568EBCD9/568E1B01" Ref="#PWR310"  Part="1" 
+AR Path="/568EBCDE/568E1B01" Ref="#PWR315"  Part="1" 
+AR Path="/568EBCE3/568E1B01" Ref="#PWR320"  Part="1" 
+AR Path="/568EBCE8/568E1B01" Ref="#PWR325"  Part="1" 
+AR Path="/568EBCED/568E1B01" Ref="#PWR330"  Part="1" 
+AR Path="/568EBCF2/568E1B01" Ref="#PWR335"  Part="1" 
+AR Path="/568EBCF7/568E1B01" Ref="#PWR340"  Part="1" 
+AR Path="/568EBCFC/568E1B01" Ref="#PWR345"  Part="1" 
+AR Path="/568EBD01/568E1B01" Ref="#PWR350"  Part="1" 
+AR Path="/568EBD06/568E1B01" Ref="#PWR355"  Part="1" 
+AR Path="/568EBD0B/568E1B01" Ref="#PWR360"  Part="1" 
+AR Path="/568EBD10/568E1B01" Ref="#PWR365"  Part="1" 
+AR Path="/568EBD15/568E1B01" Ref="#PWR370"  Part="1" 
+AR Path="/568EBD1A/568E1B01" Ref="#PWR375"  Part="1" 
+F 0 "#PWR375" H 5950 3320 50  0001 C CNN
+F 1 "HT" H 5950 3290 50  0000 C CNN
+F 2 "" H 5950 3200 50  0000 C CNN
+F 3 "" H 5950 3200 50  0000 C CNN
+	1    5950 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P5
+U 1 1 568E1B1F
+P 6400 3300
+AR Path="/568CF03B/568E1B1F" Ref="P5"  Part="1" 
+AR Path="/568E8CAC/568E1B1F" Ref="P6"  Part="1" 
+AR Path="/568E8DFF/568E1B1F" Ref="P7"  Part="1" 
+AR Path="/568E8E04/568E1B1F" Ref="P8"  Part="1" 
+AR Path="/568E91E5/568E1B1F" Ref="P9"  Part="1" 
+AR Path="/568E91EA/568E1B1F" Ref="P10"  Part="1" 
+AR Path="/568E91EF/568E1B1F" Ref="P11"  Part="1" 
+AR Path="/568E91F4/568E1B1F" Ref="P12"  Part="1" 
+AR Path="/568E9ABD/568E1B1F" Ref="P13"  Part="1" 
+AR Path="/568E9AC2/568E1B1F" Ref="P14"  Part="1" 
+AR Path="/568E9AC7/568E1B1F" Ref="P15"  Part="1" 
+AR Path="/568E9ACC/568E1B1F" Ref="P16"  Part="1" 
+AR Path="/568E9AD1/568E1B1F" Ref="P17"  Part="1" 
+AR Path="/568E9AD6/568E1B1F" Ref="P18"  Part="1" 
+AR Path="/568EA369/568E1B1F" Ref="P19"  Part="1" 
+AR Path="/568EA36E/568E1B1F" Ref="P20"  Part="1" 
+AR Path="/568EA373/568E1B1F" Ref="P21"  Part="1" 
+AR Path="/568EA378/568E1B1F" Ref="P22"  Part="1" 
+AR Path="/568EA37D/568E1B1F" Ref="P23"  Part="1" 
+AR Path="/568EA382/568E1B1F" Ref="P24"  Part="1" 
+AR Path="/568EA387/568E1B1F" Ref="P25"  Part="1" 
+AR Path="/568EA38C/568E1B1F" Ref="P26"  Part="1" 
+AR Path="/568EA391/568E1B1F" Ref="P27"  Part="1" 
+AR Path="/568EA396/568E1B1F" Ref="P28"  Part="1" 
+AR Path="/568EA39B/568E1B1F" Ref="P29"  Part="1" 
+AR Path="/568EA3A0/568E1B1F" Ref="P30"  Part="1" 
+AR Path="/568EA3A5/568E1B1F" Ref="P31"  Part="1" 
+AR Path="/568EA3AA/568E1B1F" Ref="P32"  Part="1" 
+AR Path="/568EA3AF/568E1B1F" Ref="P33"  Part="1" 
+AR Path="/568EBC7F/568E1B1F" Ref="P34"  Part="1" 
+AR Path="/568EBC84/568E1B1F" Ref="P35"  Part="1" 
+AR Path="/568EBC89/568E1B1F" Ref="P36"  Part="1" 
+AR Path="/568EBC8E/568E1B1F" Ref="P37"  Part="1" 
+AR Path="/568EBC93/568E1B1F" Ref="P38"  Part="1" 
+AR Path="/568EBC98/568E1B1F" Ref="P39"  Part="1" 
+AR Path="/568EBC9D/568E1B1F" Ref="P40"  Part="1" 
+AR Path="/568EBCA2/568E1B1F" Ref="P41"  Part="1" 
+AR Path="/568EBCA7/568E1B1F" Ref="P42"  Part="1" 
+AR Path="/568EBCAC/568E1B1F" Ref="P43"  Part="1" 
+AR Path="/568EBCB1/568E1B1F" Ref="P44"  Part="1" 
+AR Path="/568EBCB6/568E1B1F" Ref="P45"  Part="1" 
+AR Path="/568EBCBB/568E1B1F" Ref="P46"  Part="1" 
+AR Path="/568EBCC0/568E1B1F" Ref="P47"  Part="1" 
+AR Path="/568EBCC5/568E1B1F" Ref="P48"  Part="1" 
+AR Path="/568EBCCF/568E1B1F" Ref="P49"  Part="1" 
+AR Path="/568EBCD4/568E1B1F" Ref="P50"  Part="1" 
+AR Path="/568EBCD9/568E1B1F" Ref="P51"  Part="1" 
+AR Path="/568EBCDE/568E1B1F" Ref="P52"  Part="1" 
+AR Path="/568EBCE3/568E1B1F" Ref="P53"  Part="1" 
+AR Path="/568EBCE8/568E1B1F" Ref="P54"  Part="1" 
+AR Path="/568EBCED/568E1B1F" Ref="P55"  Part="1" 
+AR Path="/568EBCF2/568E1B1F" Ref="P56"  Part="1" 
+AR Path="/568EBCF7/568E1B1F" Ref="P57"  Part="1" 
+AR Path="/568EBCFC/568E1B1F" Ref="P58"  Part="1" 
+AR Path="/568EBD01/568E1B1F" Ref="P59"  Part="1" 
+AR Path="/568EBD06/568E1B1F" Ref="P60"  Part="1" 
+AR Path="/568EBD0B/568E1B1F" Ref="P61"  Part="1" 
+AR Path="/568EBD10/568E1B1F" Ref="P62"  Part="1" 
+AR Path="/568EBD15/568E1B1F" Ref="P63"  Part="1" 
+AR Path="/568EBD1A/568E1B1F" Ref="P64"  Part="1" 
+F 0 "P64" H 6400 3450 50  0000 C CNN
+F 1 "FP_NIXIE" V 6500 3300 50  0000 C CNN
+F 2 "_kicad4_lib:NIXIE_TH" H 6400 3300 50  0001 C CNN
+F 3 "" H 6400 3300 50  0000 C CNN
+	1    6400 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 3500 5950 3350
+Wire Wire Line
+	5950 3350 6200 3350
+Wire Wire Line
+	6000 3500 6000 3350
+Connection ~ 6000 3350
+Wire Wire Line
+	6200 3250 5950 3250
+Wire Wire Line
+	5950 3250 5950 3200
+$Comp
+L C C49
+U 1 1 568E1DB2
+P 6400 2650
+AR Path="/568CF03B/568E1DB2" Ref="C49"  Part="1" 
+AR Path="/568E8CAC/568E1DB2" Ref="C51"  Part="1" 
+AR Path="/568E8DFF/568E1DB2" Ref="C53"  Part="1" 
+AR Path="/568E8E04/568E1DB2" Ref="C55"  Part="1" 
+AR Path="/568E91E5/568E1DB2" Ref="C57"  Part="1" 
+AR Path="/568E91EA/568E1DB2" Ref="C59"  Part="1" 
+AR Path="/568E91EF/568E1DB2" Ref="C61"  Part="1" 
+AR Path="/568E91F4/568E1DB2" Ref="C63"  Part="1" 
+AR Path="/568E9ABD/568E1DB2" Ref="C65"  Part="1" 
+AR Path="/568E9AC2/568E1DB2" Ref="C67"  Part="1" 
+AR Path="/568E9AC7/568E1DB2" Ref="C69"  Part="1" 
+AR Path="/568E9ACC/568E1DB2" Ref="C71"  Part="1" 
+AR Path="/568E9AD1/568E1DB2" Ref="C73"  Part="1" 
+AR Path="/568E9AD6/568E1DB2" Ref="C75"  Part="1" 
+AR Path="/568EA369/568E1DB2" Ref="C77"  Part="1" 
+AR Path="/568EA36E/568E1DB2" Ref="C79"  Part="1" 
+AR Path="/568EA373/568E1DB2" Ref="C81"  Part="1" 
+AR Path="/568EA378/568E1DB2" Ref="C83"  Part="1" 
+AR Path="/568EA37D/568E1DB2" Ref="C85"  Part="1" 
+AR Path="/568EA382/568E1DB2" Ref="C87"  Part="1" 
+AR Path="/568EA387/568E1DB2" Ref="C89"  Part="1" 
+AR Path="/568EA38C/568E1DB2" Ref="C91"  Part="1" 
+AR Path="/568EA391/568E1DB2" Ref="C93"  Part="1" 
+AR Path="/568EA396/568E1DB2" Ref="C95"  Part="1" 
+AR Path="/568EA39B/568E1DB2" Ref="C97"  Part="1" 
+AR Path="/568EA3A0/568E1DB2" Ref="C99"  Part="1" 
+AR Path="/568EA3A5/568E1DB2" Ref="C101"  Part="1" 
+AR Path="/568EA3AA/568E1DB2" Ref="C103"  Part="1" 
+AR Path="/568EA3AF/568E1DB2" Ref="C105"  Part="1" 
+AR Path="/568EBC7F/568E1DB2" Ref="C107"  Part="1" 
+AR Path="/568EBC84/568E1DB2" Ref="C109"  Part="1" 
+AR Path="/568EBC89/568E1DB2" Ref="C111"  Part="1" 
+AR Path="/568EBC8E/568E1DB2" Ref="C113"  Part="1" 
+AR Path="/568EBC93/568E1DB2" Ref="C115"  Part="1" 
+AR Path="/568EBC98/568E1DB2" Ref="C117"  Part="1" 
+AR Path="/568EBC9D/568E1DB2" Ref="C119"  Part="1" 
+AR Path="/568EBCA2/568E1DB2" Ref="C121"  Part="1" 
+AR Path="/568EBCA7/568E1DB2" Ref="C123"  Part="1" 
+AR Path="/568EBCAC/568E1DB2" Ref="C125"  Part="1" 
+AR Path="/568EBCB1/568E1DB2" Ref="C127"  Part="1" 
+AR Path="/568EBCB6/568E1DB2" Ref="C129"  Part="1" 
+AR Path="/568EBCBB/568E1DB2" Ref="C131"  Part="1" 
+AR Path="/568EBCC0/568E1DB2" Ref="C133"  Part="1" 
+AR Path="/568EBCC5/568E1DB2" Ref="C135"  Part="1" 
+AR Path="/568EBCCF/568E1DB2" Ref="C137"  Part="1" 
+AR Path="/568EBCD4/568E1DB2" Ref="C139"  Part="1" 
+AR Path="/568EBCD9/568E1DB2" Ref="C141"  Part="1" 
+AR Path="/568EBCDE/568E1DB2" Ref="C143"  Part="1" 
+AR Path="/568EBCE3/568E1DB2" Ref="C145"  Part="1" 
+AR Path="/568EBCE8/568E1DB2" Ref="C147"  Part="1" 
+AR Path="/568EBCED/568E1DB2" Ref="C149"  Part="1" 
+AR Path="/568EBCF2/568E1DB2" Ref="C151"  Part="1" 
+AR Path="/568EBCF7/568E1DB2" Ref="C153"  Part="1" 
+AR Path="/568EBCFC/568E1DB2" Ref="C155"  Part="1" 
+AR Path="/568EBD01/568E1DB2" Ref="C157"  Part="1" 
+AR Path="/568EBD06/568E1DB2" Ref="C159"  Part="1" 
+AR Path="/568EBD0B/568E1DB2" Ref="C161"  Part="1" 
+AR Path="/568EBD10/568E1DB2" Ref="C163"  Part="1" 
+AR Path="/568EBD15/568E1DB2" Ref="C165"  Part="1" 
+AR Path="/568EBD1A/568E1DB2" Ref="C167"  Part="1" 
+F 0 "C167" H 6425 2750 50  0000 L CNN
+F 1 "100nF" H 6425 2550 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6438 2500 50  0001 C CNN
+F 3 "" H 6400 2650 50  0000 C CNN
+	1    6400 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L HT #PWR78
+U 1 1 568E1F82
+P 6400 2450
+AR Path="/568CF03B/568E1F82" Ref="#PWR78"  Part="1" 
+AR Path="/568E8CAC/568E1F82" Ref="#PWR83"  Part="1" 
+AR Path="/568E8DFF/568E1F82" Ref="#PWR88"  Part="1" 
+AR Path="/568E8E04/568E1F82" Ref="#PWR93"  Part="1" 
+AR Path="/568E91E5/568E1F82" Ref="#PWR98"  Part="1" 
+AR Path="/568E91EA/568E1F82" Ref="#PWR103"  Part="1" 
+AR Path="/568E91EF/568E1F82" Ref="#PWR108"  Part="1" 
+AR Path="/568E91F4/568E1F82" Ref="#PWR113"  Part="1" 
+AR Path="/568E9ABD/568E1F82" Ref="#PWR118"  Part="1" 
+AR Path="/568E9AC2/568E1F82" Ref="#PWR123"  Part="1" 
+AR Path="/568E9AC7/568E1F82" Ref="#PWR128"  Part="1" 
+AR Path="/568E9ACC/568E1F82" Ref="#PWR133"  Part="1" 
+AR Path="/568E9AD1/568E1F82" Ref="#PWR138"  Part="1" 
+AR Path="/568E9AD6/568E1F82" Ref="#PWR143"  Part="1" 
+AR Path="/568EA369/568E1F82" Ref="#PWR148"  Part="1" 
+AR Path="/568EA36E/568E1F82" Ref="#PWR153"  Part="1" 
+AR Path="/568EA373/568E1F82" Ref="#PWR158"  Part="1" 
+AR Path="/568EA378/568E1F82" Ref="#PWR163"  Part="1" 
+AR Path="/568EA37D/568E1F82" Ref="#PWR168"  Part="1" 
+AR Path="/568EA382/568E1F82" Ref="#PWR173"  Part="1" 
+AR Path="/568EA387/568E1F82" Ref="#PWR178"  Part="1" 
+AR Path="/568EA38C/568E1F82" Ref="#PWR183"  Part="1" 
+AR Path="/568EA391/568E1F82" Ref="#PWR188"  Part="1" 
+AR Path="/568EA396/568E1F82" Ref="#PWR193"  Part="1" 
+AR Path="/568EA39B/568E1F82" Ref="#PWR198"  Part="1" 
+AR Path="/568EA3A0/568E1F82" Ref="#PWR203"  Part="1" 
+AR Path="/568EA3A5/568E1F82" Ref="#PWR208"  Part="1" 
+AR Path="/568EA3AA/568E1F82" Ref="#PWR213"  Part="1" 
+AR Path="/568EA3AF/568E1F82" Ref="#PWR218"  Part="1" 
+AR Path="/568EBC7F/568E1F82" Ref="#PWR223"  Part="1" 
+AR Path="/568EBC84/568E1F82" Ref="#PWR228"  Part="1" 
+AR Path="/568EBC89/568E1F82" Ref="#PWR233"  Part="1" 
+AR Path="/568EBC8E/568E1F82" Ref="#PWR238"  Part="1" 
+AR Path="/568EBC93/568E1F82" Ref="#PWR243"  Part="1" 
+AR Path="/568EBC98/568E1F82" Ref="#PWR248"  Part="1" 
+AR Path="/568EBC9D/568E1F82" Ref="#PWR253"  Part="1" 
+AR Path="/568EBCA2/568E1F82" Ref="#PWR258"  Part="1" 
+AR Path="/568EBCA7/568E1F82" Ref="#PWR263"  Part="1" 
+AR Path="/568EBCAC/568E1F82" Ref="#PWR268"  Part="1" 
+AR Path="/568EBCB1/568E1F82" Ref="#PWR273"  Part="1" 
+AR Path="/568EBCB6/568E1F82" Ref="#PWR278"  Part="1" 
+AR Path="/568EBCBB/568E1F82" Ref="#PWR283"  Part="1" 
+AR Path="/568EBCC0/568E1F82" Ref="#PWR288"  Part="1" 
+AR Path="/568EBCC5/568E1F82" Ref="#PWR293"  Part="1" 
+AR Path="/568EBCCF/568E1F82" Ref="#PWR298"  Part="1" 
+AR Path="/568EBCD4/568E1F82" Ref="#PWR303"  Part="1" 
+AR Path="/568EBCD9/568E1F82" Ref="#PWR308"  Part="1" 
+AR Path="/568EBCDE/568E1F82" Ref="#PWR313"  Part="1" 
+AR Path="/568EBCE3/568E1F82" Ref="#PWR318"  Part="1" 
+AR Path="/568EBCE8/568E1F82" Ref="#PWR323"  Part="1" 
+AR Path="/568EBCED/568E1F82" Ref="#PWR328"  Part="1" 
+AR Path="/568EBCF2/568E1F82" Ref="#PWR333"  Part="1" 
+AR Path="/568EBCF7/568E1F82" Ref="#PWR338"  Part="1" 
+AR Path="/568EBCFC/568E1F82" Ref="#PWR343"  Part="1" 
+AR Path="/568EBD01/568E1F82" Ref="#PWR348"  Part="1" 
+AR Path="/568EBD06/568E1F82" Ref="#PWR353"  Part="1" 
+AR Path="/568EBD0B/568E1F82" Ref="#PWR358"  Part="1" 
+AR Path="/568EBD10/568E1F82" Ref="#PWR363"  Part="1" 
+AR Path="/568EBD15/568E1F82" Ref="#PWR368"  Part="1" 
+AR Path="/568EBD1A/568E1F82" Ref="#PWR373"  Part="1" 
+F 0 "#PWR373" H 6400 2570 50  0001 C CNN
+F 1 "HT" H 6400 2540 50  0000 C CNN
+F 2 "" H 6400 2450 50  0000 C CNN
+F 3 "" H 6400 2450 50  0000 C CNN
+	1    6400 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR79
+U 1 1 568E200B
+P 6400 2850
+AR Path="/568CF03B/568E200B" Ref="#PWR79"  Part="1" 
+AR Path="/568E8CAC/568E200B" Ref="#PWR84"  Part="1" 
+AR Path="/568E8DFF/568E200B" Ref="#PWR89"  Part="1" 
+AR Path="/568E8E04/568E200B" Ref="#PWR94"  Part="1" 
+AR Path="/568E91E5/568E200B" Ref="#PWR99"  Part="1" 
+AR Path="/568E91EA/568E200B" Ref="#PWR104"  Part="1" 
+AR Path="/568E91EF/568E200B" Ref="#PWR109"  Part="1" 
+AR Path="/568E91F4/568E200B" Ref="#PWR114"  Part="1" 
+AR Path="/568E9ABD/568E200B" Ref="#PWR119"  Part="1" 
+AR Path="/568E9AC2/568E200B" Ref="#PWR124"  Part="1" 
+AR Path="/568E9AC7/568E200B" Ref="#PWR129"  Part="1" 
+AR Path="/568E9ACC/568E200B" Ref="#PWR134"  Part="1" 
+AR Path="/568E9AD1/568E200B" Ref="#PWR139"  Part="1" 
+AR Path="/568E9AD6/568E200B" Ref="#PWR144"  Part="1" 
+AR Path="/568EA369/568E200B" Ref="#PWR149"  Part="1" 
+AR Path="/568EA36E/568E200B" Ref="#PWR154"  Part="1" 
+AR Path="/568EA373/568E200B" Ref="#PWR159"  Part="1" 
+AR Path="/568EA378/568E200B" Ref="#PWR164"  Part="1" 
+AR Path="/568EA37D/568E200B" Ref="#PWR169"  Part="1" 
+AR Path="/568EA382/568E200B" Ref="#PWR174"  Part="1" 
+AR Path="/568EA387/568E200B" Ref="#PWR179"  Part="1" 
+AR Path="/568EA38C/568E200B" Ref="#PWR184"  Part="1" 
+AR Path="/568EA391/568E200B" Ref="#PWR189"  Part="1" 
+AR Path="/568EA396/568E200B" Ref="#PWR194"  Part="1" 
+AR Path="/568EA39B/568E200B" Ref="#PWR199"  Part="1" 
+AR Path="/568EA3A0/568E200B" Ref="#PWR204"  Part="1" 
+AR Path="/568EA3A5/568E200B" Ref="#PWR209"  Part="1" 
+AR Path="/568EA3AA/568E200B" Ref="#PWR214"  Part="1" 
+AR Path="/568EA3AF/568E200B" Ref="#PWR219"  Part="1" 
+AR Path="/568EBC7F/568E200B" Ref="#PWR224"  Part="1" 
+AR Path="/568EBC84/568E200B" Ref="#PWR229"  Part="1" 
+AR Path="/568EBC89/568E200B" Ref="#PWR234"  Part="1" 
+AR Path="/568EBC8E/568E200B" Ref="#PWR239"  Part="1" 
+AR Path="/568EBC93/568E200B" Ref="#PWR244"  Part="1" 
+AR Path="/568EBC98/568E200B" Ref="#PWR249"  Part="1" 
+AR Path="/568EBC9D/568E200B" Ref="#PWR254"  Part="1" 
+AR Path="/568EBCA2/568E200B" Ref="#PWR259"  Part="1" 
+AR Path="/568EBCA7/568E200B" Ref="#PWR264"  Part="1" 
+AR Path="/568EBCAC/568E200B" Ref="#PWR269"  Part="1" 
+AR Path="/568EBCB1/568E200B" Ref="#PWR274"  Part="1" 
+AR Path="/568EBCB6/568E200B" Ref="#PWR279"  Part="1" 
+AR Path="/568EBCBB/568E200B" Ref="#PWR284"  Part="1" 
+AR Path="/568EBCC0/568E200B" Ref="#PWR289"  Part="1" 
+AR Path="/568EBCC5/568E200B" Ref="#PWR294"  Part="1" 
+AR Path="/568EBCCF/568E200B" Ref="#PWR299"  Part="1" 
+AR Path="/568EBCD4/568E200B" Ref="#PWR304"  Part="1" 
+AR Path="/568EBCD9/568E200B" Ref="#PWR309"  Part="1" 
+AR Path="/568EBCDE/568E200B" Ref="#PWR314"  Part="1" 
+AR Path="/568EBCE3/568E200B" Ref="#PWR319"  Part="1" 
+AR Path="/568EBCE8/568E200B" Ref="#PWR324"  Part="1" 
+AR Path="/568EBCED/568E200B" Ref="#PWR329"  Part="1" 
+AR Path="/568EBCF2/568E200B" Ref="#PWR334"  Part="1" 
+AR Path="/568EBCF7/568E200B" Ref="#PWR339"  Part="1" 
+AR Path="/568EBCFC/568E200B" Ref="#PWR344"  Part="1" 
+AR Path="/568EBD01/568E200B" Ref="#PWR349"  Part="1" 
+AR Path="/568EBD06/568E200B" Ref="#PWR354"  Part="1" 
+AR Path="/568EBD0B/568E200B" Ref="#PWR359"  Part="1" 
+AR Path="/568EBD10/568E200B" Ref="#PWR364"  Part="1" 
+AR Path="/568EBD15/568E200B" Ref="#PWR369"  Part="1" 
+AR Path="/568EBD1A/568E200B" Ref="#PWR374"  Part="1" 
+F 0 "#PWR374" H 6400 2600 50  0001 C CNN
+F 1 "GND" H 6400 2700 50  0000 C CNN
+F 2 "" H 6400 2850 50  0000 C CNN
+F 3 "" H 6400 2850 50  0000 C CNN
+	1    6400 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 2850 6400 2800
+Wire Wire Line
+	6400 2500 6400 2450
+Text Notes 4450 3900 0    60   ~ 0
+159Hz Low Pass
+Text Notes 6050 4000 0    60   ~ 0
+hFE > 100\nVbe < 0.7
+Text Notes 6050 4200 0    60   ~ 0
+3.3-0.7 / 220 = 11.8mA
+Text Notes 6600 3400 0    60   ~ 0
+Max I: 12mA\nAvg V: 105V
+Wire Wire Line
+	5950 4950 5950 4900
+$Comp
+L FUSE F1
+U 1 1 568E4E29
+P 4000 3700
+AR Path="/568CF03B/568E4E29" Ref="F1"  Part="1" 
+AR Path="/568E8CAC/568E4E29" Ref="F3"  Part="1" 
+AR Path="/568E8DFF/568E4E29" Ref="F5"  Part="1" 
+AR Path="/568E8E04/568E4E29" Ref="F7"  Part="1" 
+AR Path="/568E91E5/568E4E29" Ref="F9"  Part="1" 
+AR Path="/568E91EA/568E4E29" Ref="F11"  Part="1" 
+AR Path="/568E91EF/568E4E29" Ref="F13"  Part="1" 
+AR Path="/568E91F4/568E4E29" Ref="F15"  Part="1" 
+AR Path="/568E9ABD/568E4E29" Ref="F17"  Part="1" 
+AR Path="/568E9AC2/568E4E29" Ref="F19"  Part="1" 
+AR Path="/568E9AC7/568E4E29" Ref="F21"  Part="1" 
+AR Path="/568E9ACC/568E4E29" Ref="F23"  Part="1" 
+AR Path="/568E9AD1/568E4E29" Ref="F25"  Part="1" 
+AR Path="/568E9AD6/568E4E29" Ref="F27"  Part="1" 
+AR Path="/568EA369/568E4E29" Ref="F29"  Part="1" 
+AR Path="/568EA36E/568E4E29" Ref="F31"  Part="1" 
+AR Path="/568EA373/568E4E29" Ref="F33"  Part="1" 
+AR Path="/568EA378/568E4E29" Ref="F35"  Part="1" 
+AR Path="/568EA37D/568E4E29" Ref="F37"  Part="1" 
+AR Path="/568EA382/568E4E29" Ref="F39"  Part="1" 
+AR Path="/568EA387/568E4E29" Ref="F41"  Part="1" 
+AR Path="/568EA38C/568E4E29" Ref="F43"  Part="1" 
+AR Path="/568EA391/568E4E29" Ref="F45"  Part="1" 
+AR Path="/568EA396/568E4E29" Ref="F47"  Part="1" 
+AR Path="/568EA39B/568E4E29" Ref="F49"  Part="1" 
+AR Path="/568EA3A0/568E4E29" Ref="F51"  Part="1" 
+AR Path="/568EA3A5/568E4E29" Ref="F53"  Part="1" 
+AR Path="/568EA3AA/568E4E29" Ref="F55"  Part="1" 
+AR Path="/568EA3AF/568E4E29" Ref="F57"  Part="1" 
+AR Path="/568EBC7F/568E4E29" Ref="F59"  Part="1" 
+AR Path="/568EBC84/568E4E29" Ref="F61"  Part="1" 
+AR Path="/568EBC89/568E4E29" Ref="F63"  Part="1" 
+AR Path="/568EBC8E/568E4E29" Ref="F65"  Part="1" 
+AR Path="/568EBC93/568E4E29" Ref="F67"  Part="1" 
+AR Path="/568EBC98/568E4E29" Ref="F69"  Part="1" 
+AR Path="/568EBC9D/568E4E29" Ref="F71"  Part="1" 
+AR Path="/568EBCA2/568E4E29" Ref="F73"  Part="1" 
+AR Path="/568EBCA7/568E4E29" Ref="F75"  Part="1" 
+AR Path="/568EBCAC/568E4E29" Ref="F77"  Part="1" 
+AR Path="/568EBCB1/568E4E29" Ref="F79"  Part="1" 
+AR Path="/568EBCB6/568E4E29" Ref="F81"  Part="1" 
+AR Path="/568EBCBB/568E4E29" Ref="F83"  Part="1" 
+AR Path="/568EBCC0/568E4E29" Ref="F85"  Part="1" 
+AR Path="/568EBCC5/568E4E29" Ref="F87"  Part="1" 
+AR Path="/568EBCCF/568E4E29" Ref="F89"  Part="1" 
+AR Path="/568EBCD4/568E4E29" Ref="F91"  Part="1" 
+AR Path="/568EBCD9/568E4E29" Ref="F93"  Part="1" 
+AR Path="/568EBCDE/568E4E29" Ref="F95"  Part="1" 
+AR Path="/568EBCE3/568E4E29" Ref="F97"  Part="1" 
+AR Path="/568EBCE8/568E4E29" Ref="F99"  Part="1" 
+AR Path="/568EBCED/568E4E29" Ref="F101"  Part="1" 
+AR Path="/568EBCF2/568E4E29" Ref="F103"  Part="1" 
+AR Path="/568EBCF7/568E4E29" Ref="F105"  Part="1" 
+AR Path="/568EBCFC/568E4E29" Ref="F107"  Part="1" 
+AR Path="/568EBD01/568E4E29" Ref="F109"  Part="1" 
+AR Path="/568EBD06/568E4E29" Ref="F111"  Part="1" 
+AR Path="/568EBD0B/568E4E29" Ref="F113"  Part="1" 
+AR Path="/568EBD10/568E4E29" Ref="F115"  Part="1" 
+AR Path="/568EBD15/568E4E29" Ref="F117"  Part="1" 
+AR Path="/568EBD1A/568E4E29" Ref="F119"  Part="1" 
+F 0 "F119" H 4100 3750 50  0000 C CNN
+F 1 "50mA/32VDC" H 4000 3600 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4000 3700 50  0001 C CNN
+F 3 "" H 4000 3700 50  0000 C CNN
+	1    4000 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 3700 3400 3700
+Text Notes 6150 4700 0    60   ~ 0
+Theory: if Q fails, resistors will absorb part of the voltage,\nleaving enough time for the fuse to blow... To be tested!
+Text Notes 6450 3750 0    60   ~ 0
+max W: 140-100 * 0.012 = 0.5W
+$EndSCHEMATC

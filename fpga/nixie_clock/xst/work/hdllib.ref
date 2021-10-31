@@ -1,0 +1,8 @@
+AR spi_slave behavioral C:/Users/limpkin/Dropbox/Projets/nixie/fpga/nixie_clock/spi_slave.vhd sub00/vhpl05 1469989039
+EN dcm_multiplier NULL C:/Users/limpkin/Dropbox/Projets/nixie/fpga/nixie_clock/dcm_multiplier.vhd sub00/vhpl00 1469989034
+EN pwm NULL C:/Users/limpkin/Dropbox/Projets/nixie/fpga/nixie_clock/pwm.vhd sub00/vhpl02 1469989036
+EN top NULL C:/Users/limpkin/Dropbox/Projets/nixie/fpga/nixie_clock/TOP.vhd sub00/vhpl06 1469989040
+AR top behavioral C:/Users/limpkin/Dropbox/Projets/nixie/fpga/nixie_clock/TOP.vhd sub00/vhpl07 1469989041
+AR pwm logic C:/Users/limpkin/Dropbox/Projets/nixie/fpga/nixie_clock/pwm.vhd sub00/vhpl03 1469989037
+AR dcm_multiplier behavioral C:/Users/limpkin/Dropbox/Projets/nixie/fpga/nixie_clock/dcm_multiplier.vhd sub00/vhpl01 1469989035
+EN spi_slave NULL C:/Users/limpkin/Dropbox/Projets/nixie/fpga/nixie_clock/spi_slave.vhd sub00/vhpl04 1469989038

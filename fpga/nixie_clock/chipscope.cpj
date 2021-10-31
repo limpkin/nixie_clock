@@ -1,0 +1,19 @@
+#ChipScope Pro Analyzer Project File, Version 3.0
+#Sun Jul 31 16:59:38 CEST 2016
+device.0.configFileDir=C\:\\Users\\limpkin\\Dropbox\\Projets\\nixie\\fpga\\nixie_clock
+device.0.configFilename=top.bit
+device.0.inserterCDCFileDir=C\:\\Users\\limpkin\\Dropbox\\Projets\\nixie\\fpga\\nixie_clock
+device.0.inserterCDCFilename=
+deviceChain.deviceName0=XC3S50AN
+deviceChain.iRLength0=6
+deviceChain.name0=MyDevice0
+deviceIds=02610093
+mdiAreaHeight=0.6590136054421769
+mdiAreaHeightLast=0.842687074829932
+mdiCount=0
+navigatorHeight=0.2151360544217687
+navigatorHeightLast=0.21598639455782312
+navigatorWidth=0.23915289256198347
+navigatorWidthLast=0.23915289256198347
+signalDisplayPath=0
+unit.0.-1.username=

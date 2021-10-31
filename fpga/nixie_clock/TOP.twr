@@ -1,0 +1,139 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 4 -n
+3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf
+
+Design file:              TOP.ncd
+Physical constraint file: TOP.pcf
+Device,package,speed:     xc3s50an,tqg144,-4 (PRODUCTION 1.42 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk_in
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+spi_clk_in  |    3.404(R)|   -1.466(R)|high_frequency_clk|   0.000|
+spi_mosi_in |    3.942(R)|   -1.935(R)|high_frequency_clk|   0.000|
+spi_ncs_in  |    4.079(R)|   -2.016(R)|high_frequency_clk|   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock clk_in to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+nixies<0>   |    6.936(R)|high_frequency_clk|   0.000|
+nixies<1>   |    7.256(R)|high_frequency_clk|   0.000|
+nixies<2>   |    7.728(R)|high_frequency_clk|   0.000|
+nixies<3>   |    7.266(R)|high_frequency_clk|   0.000|
+nixies<4>   |    7.052(R)|high_frequency_clk|   0.000|
+nixies<5>   |    7.525(R)|high_frequency_clk|   0.000|
+nixies<6>   |    6.941(R)|high_frequency_clk|   0.000|
+nixies<7>   |    6.689(R)|high_frequency_clk|   0.000|
+nixies<8>   |    7.171(R)|high_frequency_clk|   0.000|
+nixies<9>   |    7.280(R)|high_frequency_clk|   0.000|
+nixies<10>  |    7.381(R)|high_frequency_clk|   0.000|
+nixies<11>  |    6.946(R)|high_frequency_clk|   0.000|
+nixies<12>  |    6.834(R)|high_frequency_clk|   0.000|
+nixies<13>  |    7.382(R)|high_frequency_clk|   0.000|
+nixies<14>  |    7.337(R)|high_frequency_clk|   0.000|
+nixies<15>  |    7.506(R)|high_frequency_clk|   0.000|
+nixies<16>  |    7.564(R)|high_frequency_clk|   0.000|
+nixies<17>  |    7.381(R)|high_frequency_clk|   0.000|
+nixies<18>  |    7.149(R)|high_frequency_clk|   0.000|
+nixies<19>  |    7.349(R)|high_frequency_clk|   0.000|
+nixies<20>  |    7.116(R)|high_frequency_clk|   0.000|
+nixies<21>  |    7.210(R)|high_frequency_clk|   0.000|
+nixies<22>  |    7.807(R)|high_frequency_clk|   0.000|
+nixies<23>  |    7.724(R)|high_frequency_clk|   0.000|
+nixies<24>  |    7.389(R)|high_frequency_clk|   0.000|
+nixies<25>  |    7.740(R)|high_frequency_clk|   0.000|
+nixies<26>  |    7.566(R)|high_frequency_clk|   0.000|
+nixies<27>  |    7.384(R)|high_frequency_clk|   0.000|
+nixies<28>  |    7.791(R)|high_frequency_clk|   0.000|
+nixies<29>  |    7.351(R)|high_frequency_clk|   0.000|
+nixies<30>  |    7.421(R)|high_frequency_clk|   0.000|
+nixies<31>  |    7.625(R)|high_frequency_clk|   0.000|
+nixies<32>  |    7.977(R)|high_frequency_clk|   0.000|
+nixies<33>  |    7.467(R)|high_frequency_clk|   0.000|
+nixies<34>  |    7.705(R)|high_frequency_clk|   0.000|
+nixies<35>  |    7.376(R)|high_frequency_clk|   0.000|
+nixies<36>  |    7.337(R)|high_frequency_clk|   0.000|
+nixies<37>  |    7.629(R)|high_frequency_clk|   0.000|
+nixies<38>  |    7.110(R)|high_frequency_clk|   0.000|
+nixies<39>  |    7.600(R)|high_frequency_clk|   0.000|
+nixies<40>  |    6.942(R)|high_frequency_clk|   0.000|
+nixies<41>  |    6.977(R)|high_frequency_clk|   0.000|
+nixies<42>  |    6.979(R)|high_frequency_clk|   0.000|
+nixies<43>  |    8.198(R)|high_frequency_clk|   0.000|
+nixies<44>  |    7.653(R)|high_frequency_clk|   0.000|
+nixies<45>  |    7.113(R)|high_frequency_clk|   0.000|
+nixies<46>  |    7.370(R)|high_frequency_clk|   0.000|
+nixies<47>  |    6.989(R)|high_frequency_clk|   0.000|
+nixies<48>  |    8.003(R)|high_frequency_clk|   0.000|
+nixies<49>  |    6.939(R)|high_frequency_clk|   0.000|
+nixies<50>  |    7.159(R)|high_frequency_clk|   0.000|
+nixies<51>  |    7.240(R)|high_frequency_clk|   0.000|
+nixies<52>  |    7.529(R)|high_frequency_clk|   0.000|
+nixies<53>  |    6.912(R)|high_frequency_clk|   0.000|
+nixies<54>  |    6.997(R)|high_frequency_clk|   0.000|
+nixies<55>  |    7.050(R)|high_frequency_clk|   0.000|
+nixies<56>  |    7.792(R)|high_frequency_clk|   0.000|
+nixies<57>  |    7.607(R)|high_frequency_clk|   0.000|
+nixies<58>  |    7.559(R)|high_frequency_clk|   0.000|
+nixies<59>  |    8.230(R)|high_frequency_clk|   0.000|
+spi_miso_out|    8.137(R)|high_frequency_clk|   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk_in
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_in         |    6.951|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Sun Jul 31 20:19:11 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 160 MB
+
+
+
